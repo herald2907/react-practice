@@ -1,2 +1,2 @@
-# react-test
-This is my react test
+# react-practice
+This is my react practice
