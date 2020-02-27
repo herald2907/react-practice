@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
     list: {
         paddingTop: 20,
         backgroundColor:'#F3F3F3',
+        height: '100%',
     },
 });
 
@@ -33,12 +34,10 @@ class EventList extends Component {
         
         
     }
-    componentWillUnmount(){
-        this.setState.abort();
-    }
     render(){
         return (
-                <FlatList            
+                <FlatList
+                style={styles.list}            
                 data={this.state.events}
                 renderItem = {({ item })=><EventCard event={item}/>}
                 keyExtractor={item => item.id}
